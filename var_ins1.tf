@@ -8,8 +8,7 @@ provider "aws" {
     region = var.region
     shared_config_files = [ "/root/.aws/config" ]
     shared_credentials_files = [ "/root/.aws/credentials"]
-    profile                  = var.profile
-
+    
 }
 
 resource "aws_instance" "my_instance_2" {
@@ -18,12 +17,6 @@ resource "aws_instance" "my_instance_2" {
   key_name = var.key_name
 
   tags = var.tags
-}
-
-variable "profile" {
-  default = "Vrushabh"
-  type = string
-  description = "here i am providing the profile for my server"
 }
 
 variable "region" {
@@ -47,7 +40,7 @@ variable "instance_type" {
 variable "key_name" {
   type = string
   description = "here we are providing the key-pair of my server"
-  default = "tier"
+  default = "key"
 }
 
 variable "tags" {
@@ -64,4 +57,3 @@ variable "tags" {
 output "Server_created" {
   value = "Yes created"
 }
-

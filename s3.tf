@@ -12,11 +12,11 @@ terraform {
 }
 
 
-resource "aws_s3_bucket" "new" {
-  bucket = "my-bucket"
+resource "aws_s3_bucket" "kit-kat" {
+  bucket = "kit-kat1"
 
   tags = {
-    Name        = "My_bucket"
+    Name        = "kit"
     Environment = "Dev"
   }
 }

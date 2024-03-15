@@ -26,14 +26,14 @@
  variable "bucket" {
     type = string
     description = "bucket"
-    default = "kit-kat_new"
+    default = "kitkat"
   }
 
  variable "tags" {
     type = map
     description = "region"
     default = {
-        name = "kit-kat_new"
+        name = "kitkat"
 
      }
    }

@@ -36,18 +36,6 @@
 #   description = "here i am providing the server size"
 #   default = "t2.micro"
 # }
-# terraform {
-#   required_providers {
-
-#   }
-# }
-
-# provider "aws" {
-#     region = var.region
-#     shared_config_files = [ "/root/.aws/config" ]
-#     shared_credentials_files = [ "/root/.aws/credentials"]
-    
-# }
 
 # resource "aws_instance" "my_instance_2" {
 #   ami = var.ami

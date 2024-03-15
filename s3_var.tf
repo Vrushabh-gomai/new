@@ -10,7 +10,7 @@
       shared_credentials_files = [ "/root/.aws/credentials"]
   
  }
-  resource "aws_s3_bucket" "star" {
+  resource "aws_s3_bucket" "walki" {
   bucket = var.bucket
 
   tags = var.tags
@@ -26,14 +26,14 @@
  variable "bucket" {
     type = string
     description = "bucket"
-    default = "star"
+    default = "walki"
   }
 
  variable "tags" {
     type = map
     description = "region"
     default = {
-        name = "star"
+        name = "walki"
 
      }
    }

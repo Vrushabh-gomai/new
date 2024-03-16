@@ -1,7 +1,7 @@
 provider "aws" {
     region = "ap-southeast-1"
-    shared_config_files = [ "/root/.aws/config" ]
-    shared_credentials_files = [ "/root/.aws/credentials"]
+    # shared_config_files = [ "/root/.aws/config" ]
+    # shared_credentials_files = [ "/root/.aws/credentials"]
 }
     terraform {
       backend "s3" {

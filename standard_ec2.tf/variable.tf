@@ -10,11 +10,7 @@ variable "ami" {
   default = "ami-09b1e8fc6368b8a3a"
 }
 
-variable "instance_type" {
-  type = string
-  description = "here i am providing the server size"
-  default = "t2.micro"
-}
+
 
 
 variable "instance_type" {

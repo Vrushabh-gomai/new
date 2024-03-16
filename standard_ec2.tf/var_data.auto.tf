@@ -8,7 +8,7 @@ resource "aws_instance" "piku" {
   key_name      = "key"
 
   tags = {
-    Name        = "instance1"
+    Name        = "variable-server"
     Environment = "Production"
     Owner       = "vrushabh"
   }

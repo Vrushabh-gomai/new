@@ -1,3 +1,3 @@
 output "Server_created" {
-  value = "doneee"
+  value = "yes"
 }

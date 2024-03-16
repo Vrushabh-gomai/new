@@ -37,25 +37,6 @@
 #   default = "t2.micro"
 # }
 
-# resource "aws_instance" "my_instance_2" {
-#   ami = var.ami
-#   instance_type = var.instance_type
-#   key_name = var.key_name
-
-#   tags = var.tags
-# }
-
-# variable "region" {
-#   type = string
-#   description = "here i am providing region for my script"
-#   default = "ap-southeast-1"
-# }
-
-# variable "ami" {
-#   type = string
-#   description = "here we are providing ami for my project"
-#   default = "ami-09b1e8fc6368b8a3a"
-# }
 
 # variable "instance_type" {
 #   type = string

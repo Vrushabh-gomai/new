@@ -1,6 +1,6 @@
 provider "aws" {
     alias = "mmmm"
-    region = "ap-southeast-1"
+    region = var.region
     # shared_config_files = [ "/root/.aws/config" ]
     # shared_credentials_files = [ "/root/.aws/credentials"]
 }
@@ -14,7 +14,7 @@ provider "aws" {
         
       }
     }
-resource "aws_instance" "my_instance_5" {
+resource "aws_instance" "my_instance_6" {
   ami           = var.ami
   instance_type = var.instance_type
   key_name      = var.key_name

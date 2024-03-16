@@ -20,10 +20,5 @@ variable "key_name" {
 
 variable "tags" {
   type = map
-  # description = "here i am providing the tags to my server"
-  default = {
-    Name = "variable-server"
-    # Enviorment = "production"
-    # Project = "XYX Project"
+  
   }
-}

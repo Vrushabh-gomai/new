@@ -1,7 +1,11 @@
 terraform {
   required_providers {
-    
+    aws = {
+      source  = "hashicorp/aws"
+      version = ">= 3.0"
+    }
   }
+
 
   backend "s3" {
     bucket         = "terrabucket1.1"
@@ -19,13 +23,13 @@ provider "aws" {
 }
 
 provider "aws" {
-    # region = var.region
-    # shared_config_files = [ "/root/.aws/config" ]
-    # shared_credentials_files = [ "/root/.aws/credentials"]
+    region = var.region
+    shared_config_files = [ "/root/.aws/config" ]
+    shared_credentials_files = [ "/root/.aws/credentials"]
     
 }
 
-resource "aws_instance" "my_instance_2" {
+resource "aws_instance" "my_instance_5" {
   ami = var.ami
   instance_type = var.instance_type
   key_name = var.key_name

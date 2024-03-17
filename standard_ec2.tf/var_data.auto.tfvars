@@ -6,7 +6,7 @@
 
   
   tags = {
-    Name        = "variable-server"
+    Name        = "vrushabh1.1"
     Environment = "Production"
     Owner       = "vrushabh"
   }
